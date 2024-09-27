@@ -11,6 +11,7 @@ a {
     margin: auto;
 }
 body {
+    font-size: 16px;
     font-family: sans-serif;
 }
 h1 {
@@ -22,7 +23,7 @@ h2 {
 /* header css*/
 header {
     background: #000;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 .name {
     font-weight: 600;
@@ -56,17 +57,26 @@ header ul {
 /*banner css*/
 .banner {
     padding: 80px 0;
-    background: #e3ffdd;
+    background: linear-gradient(120deg, #ff00cc, #6d6dfc);
+    min-height: 100vh;
 }
 .banner .container {
     display: flex;
-    flex-wrap: wrap;
     gap: 50px;
     height: 300px;
 }
 .banner img {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.info {
+    color: #fff;
+}
+.info p {
+    line-height: 1.4;
+    margin: 20px 0;
 }
 /*projects css*/
 .projects {
@@ -75,9 +85,78 @@ header ul {
 .projects h2 {
     text-align: center;
 }
+.items{
+    margin: 30px 0 50px;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+.item{
+    width: 300px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.item .content{
+    padding: 10px;
+}
+.item img {
+    width: 100%;
+    height: 200px;
+}
+/*projects end*/
 footer {
     background: #000000ae;
-    padding: 20px 0;
+    padding: 50px 0;
     color: #fff;
     text-align: center;
+}
+footer a {
+    color: #fff;
+}
+footer .newsletter p {
+    margin: 10px 0 20px;
+}
+.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+.newsletter input {
+    padding: 10px 15px;
+    outline: none;
+}
+.newsletter button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer .sub-footer {
+    border-top: 2px solid #d3d3d34a;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0;
+    margin: 30px auto 0;
+}
+.footer-links {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.social-links {
+    margin: 30px 0 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.social-links li {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.social-links li i {
+    color: #000;
 }
